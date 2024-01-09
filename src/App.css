@@ -1,0 +1,300 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+  /* position: sticky;
+  top: 0; */
+  z-index: 100; 
+}
+
+.navTitle {
+  text-decoration: none;
+  text-align: center;
+  margin-right: 2vw;
+  font-size: 2.4vh;
+
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.social {
+  gap: 10px;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navTitle:first-child {
+  margin-right: auto;
+  margin-left: 2vw;
+  position: relative;
+  z-index: 1;
+}
+
+.mobileNav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f48049;
+  color: #fff;
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  display: none;
+}
+
+.cross {
+  font-size: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1vh;
+  color: #121212;
+  transition: opacity 1.5s;
+
+
+}
+
+
+.mobileNavTitle {
+  white-space: nowrap;
+
+  color: #fff;
+  font-size: 8vh;
+  margin-top: 5vh;
+  margin-left: 1vh;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+}
+
+.show-text {
+  opacity: 1;
+  transition: opacity 1.5s;
+}
+
+.loading {
+  height: 100%;
+  width: 100%;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+}
+
+.follow {
+  position: absolute;
+  /* background-color: #f48049; */
+  background-color: #F5BF04;
+  height: 2px;
+  width: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.progressBar {
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.4s ease-out;
+  width: 0;
+}
+
+.loadingtext {
+  position: absolute;
+  right: 10;
+  bottom: 10vh;
+  font-size: 30px;
+  color: #F0EDBC;
+  font-weight: 800;
+  font-family: 'Cormorant Garamond', serif;
+  /* transform:translateY(-15px); */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+.count {
+  position:
+    absolute;
+  font-size: 130px;
+  color: #fff;
+  font-weight: 500;
+  transform: translateY(-15px);
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.back {
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #fff;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  color: #fff
+}
+
+.Link {
+  text-decoration: none;
+  color: #121212;
+  /* font-family: 'Dosis', sans-serif; */
+  font-family: 'Cormorant Garamond', serif;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  gap: 10vw;
+}
+
+.heroImage {
+  display: block;
+  height: 100%;
+  width: auto;
+}
+.overlay {
+  background: rgb(26, 25, 25);
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+.Suman {
+  /* opacity: 0;
+  transform: translateY(100px); */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+.aboutlines{
+  /* font-family: 'Cormorant Garamond', serif; */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  overflow: hidden;
+
+}
+.button {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+
+.homeText {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  font-family: 'Dosis', sans-serif;
+
+  /* opacity: 0; */
+
+}
+#Suman{
+  /* display: none; */
+    opacity: 0;
+
+}
+
+h1 {
+  font-size: 100px;
+
+}
+
+p {
+  font-size: 50px;
+}
+.button{
+  margin-top: 2vh;
+  background-color: #121212;
+  width: fit-content;
+  color: #fff;
+  text-decoration: none;
+  padding: 2vh;
+  opacity: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.but{
+ 
+
+}
+
+.imageWraper{
+  position: relative;
+  overflow: hidden;
+}
+.identities{
+  line-height: 0;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+  padding: 20px;
+  padding-left: 0px;
+  overflow-y: clip;
+}
+.identity{
+  margin: 0;
+font-size: 40px;
+ /* font-family: 'Dosis', sans-serif; */
+ font-family: 'Cormorant Garamond', serif;
+}
+@media only screen and (max-width: 912px) {
+  .mb-reverse{
+    flex-direction: column-reverse;
+  }
+  .social {
+    width: auto;
+  }
+  .identity{
+font-size: 20px;
+  }
+  .identities{
+  padding:10px ;
+  padding-left: 0px;
+
+  }
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+
+  }
+
+  .heroImage {
+    height: auto;
+    width: 100vw;
+  }
+  .homeText {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 30px;
+  }
+  .center{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2px;
+    font-size: 3.7vw;
+  }
+}
