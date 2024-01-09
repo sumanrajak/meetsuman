@@ -17,14 +17,7 @@ const About = () => {
 
 
   useEffect(() => {
-    // texts.forEach((text, index) => {
-    //   const div = document.createElement('div');
-    //   div.id = `text${index + 1}`;
-    //   div.className = 'aboutlines';
-    //   div.style.fontWeight = '800';
-    //   div.textContent = text;
-    //   document.getElementById('about').appendChild(div);
-    // });
+    
     document.getElementById('Suman').style.opacity = '1';
     const ourText = new SplitType('.Suman', { types: 'chars' })
     const chars = ourText.chars
@@ -66,14 +59,8 @@ const About = () => {
 
   return (
     <div>
-      <div className="container mb-reverse ">
-      < motion.div className="imageWraper"
-          initial={{ y: 1000, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ ease: "easeOut", duration: 1.2, delay: 0.4 }}>
-          {/* <div className="overlay"></div> */}
-          <img className="heroImage" src={hero}></img>
-        </motion.div>
+      <div className="container  ">
+      
         <div className="homeText center" id="Suman">
           <h1 className='Suman' > Suman Rajak </h1>
           <div className='about' >
@@ -100,6 +87,13 @@ const About = () => {
             <Link to="/about" className="button but">About Me</Link>
           </div>
         </div>
+        < motion.div className="imageWraper"
+          initial={{ y: 1000, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 1.2, delay: 0.4 }}>
+          {/* <div className="overlay"></div> */}
+          <img className="heroImage" src={hero}></img>
+        </motion.div>
         
       </div>
 
