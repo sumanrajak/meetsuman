@@ -53,7 +53,12 @@ const About = () => {
       stagger: 0.05,
       ease: 'power4.out',
     })
-
+    document.querySelectorAll(".heroImage").forEach(function(element) {
+      var animation = gsap.timeline({ paused: true });
+      animation.to(element, {scale: 1.3, duration: .5,x: 90, ease: "power1.inOut"});
+      element.addEventListener("mouseenter", function () {animation.play();});
+      element.addEventListener("mouseleave", function () {animation.reverse();});
+    });
 
   }, [])
 
@@ -84,7 +89,7 @@ const About = () => {
           </div>
           <div className="button">
 
-            <Link to="/about" className="button but">About Me</Link>
+            <Link to="/experience" className="button but"> My Work</Link>
           </div>
         </div>
         < motion.div className="imageWraper"
