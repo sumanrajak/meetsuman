@@ -17,7 +17,7 @@ const Experience = () => {
   const container = useRef()
   AOS.init();
   function scrolltop() {
-    window.scrollTo({top: 0, behavior: 'smooth'});
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 
     // document.body.scrollTop = 0; // For Safari
     // document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -25,6 +25,7 @@ const Experience = () => {
 
   useEffect(() => {
     document.getElementById('Suman').style.opacity = '1';
+
     gsap.set(" .Suman ", { opacity: 0, y: 100 });
     const tl = gsap.timeline({})
     tl.fromTo(
@@ -145,9 +146,9 @@ const Experience = () => {
 
       </div>
       <div className="projects ">
-<div className="scroll-up" onClick={scrolltop} data-aos="fade-left" data-aos-duration="3000">
-  <MdArrowUpward />
-</div>
+        <div className="scroll-up" onClick={scrolltop} data-aos="fade-left" data-aos-duration="3000">
+          <MdArrowUpward />
+        </div>
         <div className="personal-proj">
           <div className="project" data-aos="fade-up" data-aos-duration="3000">
             <div className="p-head">Kemakon</div>
@@ -177,17 +178,17 @@ const Experience = () => {
           </div>
         </div>
         <div className="button-w" data-aos="fade-up" data-aos-duration="3000">
-            <Link to="/contact" className="button-w but">Lets Connect!</Link>
-          </div>
+          <Link to="/contact" className="button-w but">Lets Connect!</Link>
+        </div>
         <div className="skills">
           <div className="text-scroller">
-   <div className="scroller-left">
-       <div className="werdr"> #React.js #MongoDB #Electron.js #ReactNative #HTML #Node.js #CSS #HTTPS #Web #coding #MYSQL #AWS</div>
-       </div>
-  <div className="scroller-right">
-        <div className="werd">#S3 #EC2 #AppSync #GSAP #DynamoDB #javascript #Python #Express.js #Photography #Figma #Design #Agile</div>
-        </div>
-</div>
+            <div className="scroller-left">
+              <div className="werdr"> #React.js #MongoDB #Electron.js #ReactNative #HTML #Node.js #CSS #HTTPS #Web #coding #MYSQL #AWS #Graphql</div>
+            </div>
+            <div className="scroller-right">
+              <div className="werd">#S3 #EC2 #AppSync #GSAP #DynamoDB #javascript #Python #Express.js #Photography #Figma #Design #Agile  #MERN #DBMS</div>
+            </div>
+          </div>
         </div>
 
 

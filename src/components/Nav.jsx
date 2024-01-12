@@ -94,10 +94,10 @@ const Nav = () => {
             <a href=''>
               <IoLogoInstagram />
             </a>
-            <a href=''>
+            <a href='https://www.linkedin.com/in/suman-rajak-730021196/'>
               <CiLinkedin />
             </a>
-            <a href=''>
+            <a href='https://github.com/sumanrajak'>
               <FaGithub />
             </a>
           </div>
