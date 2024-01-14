@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react'
+import  { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import SplitType from 'split-type'
 import hero from '../assets/Suman/hero.jpg'
-import { gsap, CSSPlugin, Expo, } from 'gsap'
+import { gsap } from 'gsap'
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -75,11 +75,12 @@ const Home = () => {
 
   return (
     <div>
+
       <div className="container">
         <div className="homeText" id="Suman">
-          <h1 className='Suman' >Hi meet Suman </h1>
+          <h1 className='Suman currr' >Meet Suman </h1>
           {/* <p>photographer</p> */}
-          <div className="identities">
+          <div className="identities currr">
             <div className="identity">FRONT-END DEVELOPER</div>
             <div className="identity">BACK-END DEVELOPER</div>
             <div className="identity">INNOVATOR</div>

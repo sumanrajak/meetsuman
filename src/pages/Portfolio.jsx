@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import AOS from 'aos';
 
 const Portfolio = () => {
@@ -77,7 +77,7 @@ const Portfolio = () => {
         </svg>
       </div>
       <div className="button" >
-          <a to="/experience" className="button but"> View more work </a>
+          <a to="https://www.instagram.com/its_sumann?igsh=OWRod3lmNTBxOWFp"  target="_blank" className="button but"> View more work </a>
         </div>
       {images.length > 0 ? <div className='photo-gallery photo-container'>
         {columns?.map((column, columnIndex) => (
