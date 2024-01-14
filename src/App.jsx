@@ -20,7 +20,9 @@ function App() {
     <div>
       {isLoaded ? <Loading changeLoading={changeLoading} ></Loading> :
         <>
-        <AnimatedCursor
+        {
+          window.innerWidth <= 912?<></>:
+          <AnimatedCursor
             color="0,0,0"
             innerSize={10}
             outerSize={12}
@@ -61,6 +63,8 @@ function App() {
               }
             ]}
           />
+        }
+        
           <Navbar />
           {/* <AnimatedCursor
       innerSize={10}
