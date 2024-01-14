@@ -200,7 +200,7 @@ const Contact = () => {
                   </a>
 
                 </div>
-                <a href="tel:*917001396147" className='c-icons'> +91 7001 396 147</a>
+                <a href="tel:+917001396147" className='c-icons'> +91 7001 396 147</a>
                 <div className="">
                   <a href="mailto:sumanrajak2001@gmail.com" className='c-icons' >
 
